@@ -10,16 +10,57 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/AboutUs.vue')
+  },
+  {
+    path: '/history',
+    name: 'history',
+    component: () => import(/* webpackChunkName: "about" */ '../views/HistoryPage.vue')
+  },
+  {
+    path: '/faculty',
+    name: 'faculty',
+    component: () => import(/* webpackChunkName: "about" */ '../views/FacultyPage.vue')
+  },
+  {
+    path: '/counselling',
+    name: 'counselling',
+    component: () => import(/* webpackChunkName: "about" */ '../views/CounsellingPage.vue')
+  },
+  {
+    path: '/admission',
+    name: 'admission',
+    component: () => import(/* webpackChunkName: "about" */ '../views/AdmissionPage.vue')
+  },
+  {
+    path: '/directentry',
+    name: 'directentry',
+    component: () => import(/* webpackChunkName: "about" */ '../views/DirectEntry.vue')
+  },
+  {
+    path: '/postgraduate',
+    name: 'postgraduate',
+    component: () => import(/* webpackChunkName: "about" */ '../views/PostGraduate.vue')
+  },
+  {
+    path: '/JupebProg',
+    name: 'jupebprog',
+    component: () => import(/* webpackChunkName: "about" */ '../views/JupebProg.vue')
+  },
+  {
+    path: '/PreDegree',
+    name: 'PreDegree',
+    component: () => import(/* webpackChunkName: "about" */ '../views/PreDegree.vue')
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior(){
+    //Always scroll to top
+    return {top: 0}
+  }
 })
 
 export default router
