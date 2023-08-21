@@ -40,12 +40,10 @@
             <div class="mt-5 addmission_det">
                 <ul>
                     <li><span style="color:rgb(230, 201, 148)">Faculty</span></li>
-                    <li> Predegree Academic Fees</li>
-                    <li> JUPEB Academic Calender</li>
-                    <li>Undergraduate Admission</li>
-                    <li>Undergraduate Academic Calendar</li>
-                    <li> Undergraduate Academic Fees</li>
-                    <li> Undergraduate Academic Prospectus</li>
+                    <li><router-link to="/faculty">Faculty Of Science</router-link></li>
+                    <li><router-link to="/faculty">Faculty Of Engineering</router-link></li>
+                    <li><router-link to="/faculty">Faculty Of Social Science</router-link></li>
+                    <li><router-link to="/faculty">Faculty Of Education</router-link></li>
                 </ul>
             </div>
 

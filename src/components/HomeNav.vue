@@ -1,10 +1,10 @@
 <template>
     <nav>
-        <div class="top_nav">
+      <!--   <div class="top_nav">
             <ul>
                 <li><router-link to="/counselling">Counselling</router-link></li>
             </ul>
-        </div>
+        </div> -->
 
         
         <div class="top_header">
@@ -28,7 +28,7 @@
 
 <style scoped>
 nav {
-    height: 150px;
+    height: 100px;
     width: 100%;
     overflow: hidden;
     background: #4F6802;

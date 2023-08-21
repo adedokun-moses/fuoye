@@ -54,7 +54,10 @@
 
 
       </div>
-      <button><i class="fa fa-plus-circle " style="padding-right: 10px"></i>More About Admission</button>
+      <router-link to="/about">
+        <button><i class="fa fa-plus-circle " style="padding-right: 10px"></i>More About Academics</button>
+      </router-link>
+    
     </div>
   </section>
   <article>
@@ -79,7 +82,8 @@
         </div> -->
 
       </div>
-      <button>More About Admission <span style="padding-right: 10px">></span></button>
+      <router-link to="/faculty">
+      <button>More About Admission <span style="padding-right: 10px">></span></button></router-link>
     </div>
   </article>
   <article style="background: whitesmoke !important;">
@@ -102,7 +106,8 @@
         </div>
 
       </div>
-      <button>More About FUOYE </button>
+      <router-link to="/history">
+      <button>More About FUOYE </button></router-link>
     </div>
   </article>
   <footer class="mt-5">
